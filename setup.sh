@@ -4,6 +4,11 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install python3-pip python-is-python3 -y
 
+# install i3, i3-gnome
+echo "---> setting up i3..."
+chmod +x ./i3_setup.sh
+./i3_setup.sh
+
 # install git
 echo "---> setting up git..."
 chmod +x ./git_setup.sh

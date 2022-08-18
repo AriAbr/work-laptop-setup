@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt install python3-pip python-is-python3 -y
@@ -32,18 +33,9 @@ chmod +x ./dm_install.sh
 ./dm_install.sh
 
 # setup github ssh
-ssh-keygen -t rsa -b 4096 -C "aabramowitz@dynamichcsolutions.com"
-xclip -sel c < ~/.ssh/id_rsa.pub
-echo "ssh key copied to clipboard"
-echo "To continue with github ssh setup, open https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
-echo "Then press Y, then ENTER to continue laptop setup."
-read -n 1 -r
-echo    # (optional) move to a new line
-if ! [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo "Exiting laptop setup"
-    exit 1
-fi
+echo "---> setting up github ssh..."
+chmod +x ./github_ssh.sh
+./github_ssh.sh
 
 # install vscode
 sudo snap install --classic code

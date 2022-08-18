@@ -1,4 +1,4 @@
-# UUUsage:
+# Usage:
 
 ```
 $ chmod +x ./setup.sh

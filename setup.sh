@@ -5,10 +5,9 @@ sudo apt upgrade -y
 sudo apt install python3-pip python-is-python3 -y
 
 # install git
-echo "---> installing git..."
-sudo apt install git -y
-git config --global user.name "Ari Abramowitz"
-git config --global user.email "ari.abramowitz1@gmail.com"
+echo "---> setting up git..."
+chmod +x ./git_setup.sh
+./git_setup.sh
 
 # install xclip
 echo "---> installing xclip..."

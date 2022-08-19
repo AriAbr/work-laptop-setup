@@ -8,7 +8,7 @@ git clone git@github.com:AriAbr/i3-setup.git ~/.config/i3
 sudo apt install i3status suckless-tools i3blocks rofi arandr -y
 
 # i3blocks
-sudo apt install fonts-font-awesome acpi -y
+sudo apt install fonts-font-awesome acpi light -y
 mkdir ~/.config/i3blocks
 git clone git@github.com:AriAbr/i3blocks-setup.git ~/.config/i3blocks
 

@@ -46,6 +46,11 @@ echo "---> setting up vpn..."
 chmod +x ./vpn_setup.sh
 ./vpn_setup.sh
 
+# clone projects
+echo "---> cloning projects..."
+chmod +x ./clone_projects.sh
+./clone_projects.sh
+
 # install vscode
 sudo snap install --classic code
 

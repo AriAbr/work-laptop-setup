@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "setting up i3"
+sudo apt install i3

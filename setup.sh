@@ -57,3 +57,8 @@ sudo snap install --classic code
 # install flameshot
 sudo dpkg -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
 sudo apt -f install
+
+# gogh
+echo "---> gogh terminal setup..."
+chmod +x ./gogh.sh
+./gogh.sh

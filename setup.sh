@@ -48,3 +48,7 @@ chmod +x ./vpn_setup.sh
 
 # install vscode
 sudo snap install --classic code
+
+# install flameshot
+sudo dpkg -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
+sudo apt -f install

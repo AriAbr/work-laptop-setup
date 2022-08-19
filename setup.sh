@@ -41,5 +41,10 @@ echo "---> setting up github ssh..."
 chmod +x ./github_ssh.sh
 ./github_ssh.sh
 
+# setup vpn
+echo "---> setting up vpn..."
+chmod +x ./vpn_setup.sh
+./vpn_setup.sh
+
 # install vscode
 sudo snap install --classic code

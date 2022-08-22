@@ -4,6 +4,17 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install python3-pip python-is-python3 -y
 
+# install chrome
+sudo dpkg --force-depends -i ./google-chrome-stable_current_amd64.deb
+sudo apt -f install
+
+# install vscode
+sudo snap install --classic code
+
+# install flameshot
+sudo dpkg --force-depends -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
+sudo apt -f install
+
 # install i3, i3-gnome
 echo "---> setting up i3..."
 chmod +x ./i3_setup.sh
@@ -51,14 +62,11 @@ echo "---> cloning projects..."
 chmod +x ./clone_projects.sh
 ./clone_projects.sh
 
-# install vscode
-sudo snap install --classic code
-
-# install flameshot
-sudo dpkg -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
-sudo apt -f install
-
 # gogh
 echo "---> gogh terminal setup..."
 chmod +x ./gogh.sh
 ./gogh.sh
+
+
+# autoremove
+sudo apt autoremove -y

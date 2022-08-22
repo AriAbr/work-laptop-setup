@@ -18,5 +18,5 @@ mkdir ~/dev
 
 for PROJECT in $PROJECTS
 do
-    git clone $PROJECT ~/dev
+    git -C ~/dev clone $PROJECT
 done

@@ -67,6 +67,5 @@ echo "---> gogh terminal setup..."
 chmod +x ./gogh.sh
 ./gogh.sh
 
-
 # autoremove
 sudo apt autoremove -y

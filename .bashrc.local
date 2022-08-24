@@ -16,6 +16,7 @@ export EDITOR=~/code-wait.sh
 alias cas="cd ~/dev/dynamics-cas"
 alias dmx="cd ~/.dev-matrix"
 alias dyn="cd ~/dev/dynamics-py"
+alias dync="cd ~/dev/dynamics-py-core"
 alias gql="cd ~/dev/dynamics-graph"
 alias med="cd ~/dev/medicaid-application"
 alias men="cd ~/dev/mentor-program"

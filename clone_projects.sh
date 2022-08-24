@@ -8,6 +8,7 @@ git@github.com:Centers-Health/dynamics-py.git
 git@github.com:Centers-Health/centers-sites.git
 git@github.com:Centers-Health/dynamics-cas.git
 git@github.com:Centers-Health/dynamics-py-core.git
+git@github.com:Centers-Health/dynamics-py-forms.git
 git@github.com:Centers-Health/medicaid-application.git
 git@github.com:Centers-Health/dynamics-graph.git
 git@github.com:Centers-Health/mentor-program.git

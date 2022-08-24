@@ -47,6 +47,13 @@ echo "---> installing dm..."
 chmod +x ./dm_install.sh
 ./dm_install.sh
 
+# bashrc.local
+echo "---> setting up bashrc.local..."
+echo "#!/bin/bash" > "$HOME/.bashrc.local"
+echo "" >> "$HOME/.bashrc.local"
+echo 'source ~/dev/work-laptop-setup/.bashrc.local' >> "$HOME/.bashrc.local"
+
+
 # setup github ssh
 echo "---> setting up github ssh..."
 chmod +x ./github_ssh.sh

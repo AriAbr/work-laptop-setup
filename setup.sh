@@ -67,5 +67,10 @@ echo "---> gogh terminal setup..."
 chmod +x ./gogh.sh
 ./gogh.sh
 
+# pass (for `dm punch``)
+echo "---> pass/dm punch setup..."
+chmod +x ./pass.sh
+./pass.sh
+
 # autoremove
 sudo apt autoremove -y

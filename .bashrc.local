@@ -23,6 +23,7 @@ alias med="cd ~/dev/medicaid-application"
 alias men="cd ~/dev/mentor-program"
 alias sit="cd ~/dev/centers-sites"
 alias tal="cd ~/dev/talent-acquisition"
+alias wls="cd ~/dev/work-laptop-setup"
 
 
 alias i3config="cd ~/.config/i3"

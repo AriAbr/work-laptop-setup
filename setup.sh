@@ -64,6 +64,11 @@ echo "---> setting up vpn..."
 chmod +x ./vpn_setup.sh
 ./vpn_setup.sh
 
+# disable middle mouse button paste
+echo "---> disableing middle button paste..."
+chmod +x ./disable_middle_paste.sh
+./disable_middle_paste.sh
+
 # clone projects
 echo "---> cloning projects..."
 chmod +x ./clone_projects.sh

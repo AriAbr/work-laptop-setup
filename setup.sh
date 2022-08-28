@@ -20,6 +20,11 @@ echo "---> setting up i3..."
 chmod +x ./i3_setup.sh
 ./i3_setup.sh
 
+# install pre-commit
+echo "---> installing pre-commit..."
+chmod +x ./pre_commit.sh
+./pre_commit.sh
+
 # install git
 echo "---> setting up git..."
 chmod +x ./git_setup.sh

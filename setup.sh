@@ -15,6 +15,11 @@ sudo snap install --classic code
 sudo dpkg --force-depends -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
 sudo apt -f install
 
+# install picom
+echo "---> installing picom..."
+chmod +x ./picom_install.sh
+./picom_install.sh
+
 # install i3, i3-gnome
 echo "---> setting up i3..."
 chmod +x ./i3_setup.sh

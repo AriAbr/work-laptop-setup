@@ -6,12 +6,7 @@ alias dmtestc="dm test -w --cache-clear --create-db"
 alias pyt="ptw -w -- --testmon --disable-warnings"
 alias pytc="ptw -w -- --testmon --disable-warnings --cache-clear --create-db"
 alias set-scroll-speed="bash <(curl -s http://www.nicknorton.net/mousewheel.sh)" 
-alias reload-bashrc="source ~/.bashrc"
-alias chrome="google-chrome"
-alias display-setup-work="xrandr --output eDP-1 --auto --right-of DP-1-2"
 alias vscode-update="wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb && sudo dpkg -i /tmp/code_latest_amd64.deb && rm /tmp/code_latest_amd64.deb"
-# Lenovo keyboard middle button setup
-alias lenovo-mouse-setup=~/.config/lenovo-mouse-setup.sh
 ## vscode
 export VISUAL=~/code-wait.sh
 export EDITOR=~/code-wait.sh

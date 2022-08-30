@@ -25,6 +25,11 @@ echo "---> setting up i3..."
 chmod +x ./i3_setup.sh
 ./i3_setup.sh
 
+# setup rofi
+echo "---> setting up i3..."
+chmod +x ./rofi.sh
+./rofi.sh
+
 # install pre-commit
 echo "---> installing pre-commit..."
 chmod +x ./pre_commit.sh

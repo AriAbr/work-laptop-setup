@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sudo apt install i3 brightnessctl
-
+sudo apt install i3 brightnessctl gnome-screensaver -y
 # i3
 mkdir ~/.config/i3
 git clone git@github.com:AriAbr/i3-setup.git ~/.config/i3

@@ -1,4 +1,6 @@
 alias src="source ~/.bashrc"
+alias venv="source .venv/bin/activate" 
+alias vsrc="src; venv"
 alias dmtest="dm test -w"
 alias dmtestc="dm test -w --cache-clear --create-db"
 alias pyt="ptw -w -- --testmon --disable-warnings"
@@ -13,8 +15,6 @@ alias lenovo-mouse-setup=~/.config/lenovo-mouse-setup.sh
 ## vscode
 export VISUAL=~/code-wait.sh
 export EDITOR=~/code-wait.sh
-
-alias venv="source .venv/bin/activate" 
 
 # Projects
 alias cas="cd ~/dev/dynamics-cas && venv"

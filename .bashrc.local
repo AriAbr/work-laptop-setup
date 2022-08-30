@@ -1,6 +1,8 @@
 alias src="source ~/.bashrc"
 alias dmtest="dm test -w"
 alias dmtestc="dm test -w --cache-clear --create-db"
+alias pyt="ptw -w"
+alias pytc="ptw -w -- --cache-clear --create-db"
 alias set-scroll-speed="bash <(curl -s http://www.nicknorton.net/mousewheel.sh)" 
 alias reload-bashrc="source ~/.bashrc"
 alias chrome="google-chrome"

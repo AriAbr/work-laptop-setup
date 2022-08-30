@@ -35,6 +35,11 @@ echo "---> setting up git..."
 chmod +x ./git_setup.sh
 ./git_setup.sh
 
+# install gh
+echo "---> installing gh..."
+chmod +x ./gh.sh
+./gh.sh
+
 # install xclip
 echo "---> installing xclip..."
 sudo apt install xclip -y

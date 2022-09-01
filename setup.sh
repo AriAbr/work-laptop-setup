@@ -12,8 +12,9 @@ sudo apt -f install
 sudo snap install --classic code
 
 # install spotify
-sudo snap install spotify
-
+echo "---> installing spotify..."
+chmod +x ./spotify.sh
+./spotify.sh
 # install flameshot
 sudo dpkg --force-depends -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
 sudo apt -f install

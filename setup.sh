@@ -104,5 +104,9 @@ echo "---> pass/dm punch setup..."
 chmod +x ./pass.sh
 ./pass.sh
 
+# install autorandr
+# see also https://github.com/rliou92/python-umonitor
+sudo pip install autorandr
+
 # autoremove
 sudo apt autoremove -y

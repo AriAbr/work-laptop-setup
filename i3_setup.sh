@@ -18,5 +18,8 @@ git clone https://github.com/hastinbe/i3-volume.git ~/.config/i3-volume
 git clone https://github.com/i3-gnome/i3-gnome.git
 cd i3-gnome
 sudo make install
+sudo apt install gnome-flashback gnome-power-manager
+sudo apt-get -y install gnome-power-manager
+gsettings set org.gnome.gnome-flashback desktop false
 cd ..
 rm -rf i3-gnome

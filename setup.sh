@@ -110,3 +110,8 @@ sudo pip install autorandr
 
 # autoremove
 sudo apt autoremove -y
+
+# teams-chrome
+echo "---> installing teams-chrome..."
+chmod +x ./teams_chrome_install.sh
+./teams_chrome_install.sh

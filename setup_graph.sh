@@ -10,13 +10,8 @@ cd ~/dev/dynamics-graph
 # Create empty .env file
 touch .env
 
-# Open a shell in the graph container
-dm shell
-
-# Do a yarn install
-yarn install
-
-# Exit the shell (click ctrl+d)
+# Do a yarn install in the container
+echo "yarn install" | dm shell
 
 # run the project
 dm up

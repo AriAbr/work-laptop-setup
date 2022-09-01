@@ -11,6 +11,9 @@ sudo apt -f install
 # install vscode
 sudo snap install --classic code
 
+# install spotify
+sudo snap install spotify
+
 # install flameshot
 sudo dpkg --force-depends -i ./flameshot-12.1.0-1.ubuntu-20.04.amd64.deb
 sudo apt -f install

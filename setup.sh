@@ -49,6 +49,11 @@ echo "---> installing gh..."
 chmod +x ./gh.sh
 ./gh.sh
 
+# setup git-j
+echo "---> setting up git-j..."
+chmod +x ./setup_git_j.sh
+./setup_git_j.sh
+
 # install xclip
 echo "---> installing xclip..."
 sudo apt install xclip -y

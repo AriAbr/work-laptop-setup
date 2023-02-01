@@ -1,35 +1,46 @@
 alias src="source ~/.bashrc"
-alias venv="source .venv/bin/activate" 
+alias venv="source .venv/bin/activate"
 alias vsrc="src; venv"
 alias dmtest="dm test -w"
 alias dmtestc="dm test -w --cache-clear --create-db"
 alias pyt="ptw -w -- --testmon --disable-warnings"
 alias pytc="ptw -w -- --testmon --disable-warnings --cache-clear --create-db"
-alias set-scroll-speed="bash <(curl -s http://www.nicknorton.net/mousewheel.sh)" 
+alias set-scroll-speed="bash <(curl -s http://www.nicknorton.net/mousewheel.sh)"
 alias vscode-update="wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb && sudo dpkg -i /tmp/code_latest_amd64.deb && rm /tmp/code_latest_amd64.deb"
+# Based on https://github.com/phw/peek/issues/1094#issuecomment-1240497399
+alias peek-22="peek -b ffmpeg"
+open-i3-wksp() {
+    i3-msg "workspace $@"
+}
+alias sensibo="xdg-open https://home.sensibo.com/#/pods && open-i3-wksp 🌎 I"
+alias punch="xdg-open https://app.propertime.co.il/MonthlyTimesheet.aspx && open-i3-wksp 🌎 I"
+alias timecard="xdg-open https://app.fingercheck.com/FingerCheck/SelfService/TimeCard/TimeCard.aspx && open-i3-wksp 🌎 I"
 ## vscode
 export VISUAL=~/code-wait.sh
 export EDITOR=~/code-wait.sh
 
 # Projects
-alias cas="cd ~/dev/dynamics-cas && venv"
-alias dyn="cd ~/dev/dynamics-py && venv"
-alias dync="cd ~/dev/dynamics-py-core && venv"
-alias dynf="cd ~/dev/dynamics-py-forms && venv"
-alias dyngfl="cd ~/dev/dynamics-py-gfl && venv"
-alias dynjs="cd ~/dev/dynamics-py-js && venv"
-alias gql="cd ~/dev/dynamics-graph && venv"
-alias med="cd ~/dev/medicaid-application && venv"
-alias men="cd ~/dev/mentor-program && venv"
-alias sit="cd ~/dev/centers-sites && venv"
-alias tal="cd ~/dev/talent-acquisition && venv"
-# Projects w/o venv 
+alias cas="cd ~/dev/dynamics-cas"
+alias clt="cd ~/dev/covid-lab-tracker"
+alias dyn="cd ~/dev/dynamics-py-core"
+alias dact="cd ~/dev/dynamics-py-actions"
+alias dcas="cd ~/dev/dynamics-py-cas"
+alias dfrm="cd ~/dev/dynamics-py-forms"
+alias dgfl="cd ~/dev/dynamics-py-gfl"
+alias djs="cd ~/dev/dynamics-py-js"
+alias gql="cd ~/dev/dynamics-graph"
+alias med="cd ~/dev/medicaid-application"
+alias men="cd ~/dev/mentor-program"
+alias sit="cd ~/dev/centers-sites"
+alias tal="cd ~/dev/talent-acquisition"
+# Projects w/o venv
 alias dmx="cd ~/.dev-matrix"
 alias wls="cd ~/dev/work-laptop-setup"
 
 
 alias i3config="cd ~/.config/i3"
 alias codex="code . && exit"
+alias dox="devcontainer open && exit"
 
 # Git
 alias glb="git log --pretty='format:%C(auto)%h%d %B' --color=always | sed '/^$/d' | less -r"

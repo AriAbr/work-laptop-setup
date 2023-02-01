@@ -78,7 +78,7 @@ chmod +x ./dm_install.sh
 
 # bashrc.local
 echo "---> setting up bashrc.local..."
-echo "#!/bin/bash" > "$HOME/.bashrc.local"
+echo '#!/bin/bash' > "$HOME/.bashrc.local"
 echo "" >> "$HOME/.bashrc.local"
 echo 'source ~/dev/work-laptop-setup/.bashrc.local' >> "$HOME/.bashrc.local"
 

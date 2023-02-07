@@ -1,6 +1,7 @@
 alias src="source ~/.bashrc"
 alias venv="source .venv/bin/activate"
 alias vsrc="src; venv"
+alias dc="docker-compose"
 alias dmtest="dm test -w"
 alias dmtestc="dm test -w --cache-clear --create-db"
 alias pyt="ptw -w -- --testmon --disable-warnings"

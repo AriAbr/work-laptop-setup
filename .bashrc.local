@@ -1,7 +1,6 @@
 alias src="source ~/.bashrc"
 alias venv="source .venv/bin/activate"
 alias vsrc="src; venv"
-alias dc="docker-compose"
 alias dmtest="dm test -w"
 alias dmtestc="dm test -w --cache-clear --create-db"
 alias pyt="ptw -w -- --testmon --disable-warnings"
@@ -44,6 +43,10 @@ alias wls="cd ~/dev/work-laptop-setup"
 alias i3config="cd ~/.config/i3"
 alias codex="code . && exit"
 alias dox="devcontainer open && exit"
+
+# Docker
+alias dc="docker-compose"
+alias dex="docker exec -it"
 
 # Git
 alias glb="git log --pretty='format:%C(auto)%h%d %B' --color=always | sed '/^$/d' | less -r"
